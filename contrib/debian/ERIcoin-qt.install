@@ -1,0 +1,5 @@
+ERIcoin-qt usr/bin
+share/pixmaps/bitcoin32.xpm usr/share/pixmaps
+share/pixmaps/bitcoin80.xpm usr/share/pixmaps
+debian/ERIcoin-qt.desktop usr/share/applications
+debian/ERIcoin-qt.protocol usr/share/kde4/services/

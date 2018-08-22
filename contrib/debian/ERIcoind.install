@@ -1,0 +1,2 @@
+debian/bin/ERIcoind usr/bin
+src/ERIcoind usr/lib/ERIcoin

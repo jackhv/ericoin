@@ -1,0 +1,11 @@
+[Protocol]
+exec=ERIcoin-qt '%u'
+protocol=ERIcoin
+input=none
+output=none
+helper=true
+listing=
+reading=false
+writing=false
+makedir=false
+deleting=false
