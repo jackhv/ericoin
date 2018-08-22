@@ -6,7 +6,7 @@ POW:
 
 Everyone can only mine through the wallet.
 
-(./ERIcoin-v1.0.0 setgenerate true)
+(./ERIcoin-v1.0.0 setgenerate true)(Debug console: setgenerate true)
 
 BLOCK TIME  64s
 
