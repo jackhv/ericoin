@@ -6,11 +6,11 @@ POW:
 
 Everyone can only mine through the wallet.
 
-(./ERIcoin-v1.0.0 setgenerate true)(Debug console: setgenerate true)
+(./ERIcoin-v1.0.0 setgenerate true)(Debug console: setgenerate true)(setgenerate true -1 can use 100% cpu)
 
 BLOCK TIME  64s
 
-MAX HEIGHT: 20000(After this will not accept POW,~ two weeks)
+MAX HEIGHT: 20000(After this will not accept POW,~ two weeks)(Before this will not accept POS,~ two weeks)
 
 POW REWARD 50000
 
