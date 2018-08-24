@@ -656,8 +656,11 @@ public:
 
     uint256 GetPoWHash() const
     {
-        return Secret(BEGIN(nVersion), END(nNonce));
-		//return scrypt_blockhash(CVOIDBEGIN(nVersion));
+	if (nBestHeight+1 > 501) 
+            return Secret2(BEGIN(nVersion), END(nNonce));
+        else 
+            return Secret(BEGIN(nVersion), END(nNonce));
+        //return scrypt_blockhash(CVOIDBEGIN(nVersion));
     }
 
     int64_t GetBlockTime() const
