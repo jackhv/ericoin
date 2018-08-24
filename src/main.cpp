@@ -2034,7 +2034,11 @@ bool CBlock::AcceptBlock()
 
     if (IsProofOfWork() && nHeight > Params().LastPOWBlock())
         return DoS(100, error("AcceptBlock() : reject proof-of-work at height %d", nHeight));
-
+	
+     // Check proof-of-stake, before the Last POW Block will not accept POS.
+    if (IsProofOfStake() && nHeight <= Params().LastPOWBlock())
+        return DoS(100, error("AcceptBlock() : reject proof-of-stake at height %d", nHeight));
+	
     // Check coinbase timestamp
     if (GetBlockTime() > FutureDrift((int64_t)vtx[0].nTime, nHeight))
         return DoS(50, error("AcceptBlock() : coinbase timestamp is too early"));
